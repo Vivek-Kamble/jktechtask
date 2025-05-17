@@ -1,14 +1,16 @@
 package jktech.task.auth.entity;
 
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
 import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Table(name = "Users")
+@Table(name = "user_data",schema = "users")
 @Data
+@Getter @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Builder
 public class User {
 

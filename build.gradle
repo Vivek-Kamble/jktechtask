@@ -2,12 +2,7 @@ plugins {
     id 'org.springframework.boot' version '2.7.18'
     id 'io.spring.dependency-management' version '1.1.4'
     id 'java'
-//    id 'application'
 }
-
-//application{
-//    mainClass = 'jktech.task.JKTaskMain'
-//}
 
 group = 'jktech'
 version = '1.0-SNAPSHOT'
@@ -19,9 +14,11 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-//    implementation 'org.springframework.boot:spring-boot-starter-security'
-//    implementation 'org.springframework.boot:spring-boot-starter-validation'
-    implementation 'org.springdoc:springdoc-openapi-ui:1.6.15'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springdoc:springdoc-openapi-ui:1.7.0'
+    implementation 'mysql:mysql-connector-java:8.0.33'
+    implementation 'io.jsonwebtoken:jjwt:0.9.1'
 
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
