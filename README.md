@@ -13,3 +13,5 @@ Steps to run this application:
 3. Setup mysql (create database = "users")
 4. Add configuration i.e. datasource url, username, password in application.properties
 5. Run this application
+6. Go tu url :- http://localhost:8080/swagger-ui/index.html
+7. Test the API endpoints using swagger-ui
